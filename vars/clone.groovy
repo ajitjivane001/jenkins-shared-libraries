@@ -1,4 +1,5 @@
-def call(string url, string branch){
-    echo "Cloning code"
-                git url: "${url}", branch:$"{branch}"
+def call(String repoUrl, String branchName) {
+    echo "Cloning repository from shared library..."
+
+    git url: https://github.com/ajitjivane001/django-notes-app.git, branch: main
 }
